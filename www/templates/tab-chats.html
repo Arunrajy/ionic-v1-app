@@ -1,0 +1,41 @@
+<ion-view view-title="Chats">
+  <ion-content  ng-show="isOnline">
+    <ion-list class="card" ng-repeat="chat in chats">
+      <!-- <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+        <img ng-src="{{chat.picture.large}}">
+        <h2>{{chat.name}}</h2>
+        <p>{{chat.lastText}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>
+      </ion-item> -->
+
+      <div class="item item-avatar">
+   <img ng-src="{{chat.picture.thumbnail}}">
+   <h2>{{chat.name.first}}</h2>
+   <p>{{chat.dob.date | date : format : timezone}}</p>
+ </div>
+
+      <div class="item item-body">
+  <img class="full-image"  hires="{{chat.picture.large}}"  ng-src="img/picture.png "/>
+  <p>
+  {{chat.gender}}
+  </p>
+  <p>
+    <a href="#" class="subdued">{{chat.location.state}}</a>
+    <a href="#" class="subdued">{{chat.location.city}}</a>
+  </p>
+</div>
+    </ion-list>
+
+  </ion-content>
+    <ion-content  ng-show="!isOnline">
+      <ion-list class="card" >
+        <div class="item item-body">
+    <img class="full-image" src="img/picture.png "/>
+  </div>
+            </ion-list>
+    </ion-content>
+</ion-view>

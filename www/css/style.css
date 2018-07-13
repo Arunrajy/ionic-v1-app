@@ -1,0 +1,48 @@
+/* Empty. Add your own CSS if you like */
+.messages {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+.chat_story .scroll{
+	margin-bottom: 500px!important;
+}
+.messages li {
+	display:block;
+	clear:both;
+	max-width:70%;
+	margin:0 0 1rem 0;
+	padding:10px;	border-radius:.75rem;
+}
+
+
+.messages span {
+	font-weight: bold;
+}
+.messages p {
+	border-radius:.75rem;
+	/* background:#e6e5eb;
+	color:#383641; */
+	padding-top:.6875rem;
+	margin:0;
+	font-size:.875rem;
+}
+
+/* .messages li:nth-child(even) p {
+	background:#158ffe;
+	color:#fff;
+} */
+
+.messages img {
+	display:block;
+	max-width:100%;
+	border-radius:.75rem;
+}
+
+
+.image-loader-container{
+    display: block;
+    height: 200px;
+    text-align: center;
+    padding-top: 20%;
+}
